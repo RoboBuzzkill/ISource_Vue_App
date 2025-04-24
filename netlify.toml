@@ -1,11 +1,11 @@
-[build]
-    base = "frontend/"
-    command = "yarn deploy"
+[
+build
+]
+  publish = "src"
 
-[[plugins]]
-    package = "netlify-plugin-cache-nextjs"
-
-[[redirects]]
+[[
+redirects
+]]
   from = "/*"
   to = "/index.html"
   status = 200
